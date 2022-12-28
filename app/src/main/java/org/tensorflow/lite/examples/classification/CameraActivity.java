@@ -521,7 +521,7 @@ public abstract class CameraActivity extends AppCompatActivity
     if (results != null && results.size() >= 3) {
       Recognition recognition = results.get(0);
 
-      if (recognition.getConfidence()*100 > 75) {
+      if (recognition.getConfidence()*100 > 60) {
         if (recognition.getTitle().equals("Human")) {
           humanIndicatorView.setVisibility(View.VISIBLE);
 
